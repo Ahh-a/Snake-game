@@ -15,18 +15,6 @@ Um jogo Snake moderno e avançado desenvolvido em Python com Pygame, featuring m
 - **Tela de Início**: Interface amigável com instruções
 - **Reinício Automático**: Jogo continua após game over
 
-### 🤖 Modo Automático Avançado
-- **Algoritmo Hamiltoniano**: Implementação de ciclo hamiltoniano
-- **Movimento Inteligente**: Padrão zigue-zague que cobre toda a tela
-- **Zero Colisões**: Garante que a cobra nunca colida consigo mesma
-- **Alternância Fácil**: Troque entre manual e automático com uma tecla
-
-### ⚡ Sistema de Velocidade Ultra-Rápido
-- **Velocidade Dual**: Sistema de delay + múltiplos movimentos por frame
-- **100x Mais Rápido**: Até 100.000 movimentos por segundo
-- **Controle Fino**: Ajustes incrementais de 5ms
-- **Indicador Visual**: Mostra velocidade atual na tela
-
 ## 🚀 Instalação
 
 ### Pré-requisitos
@@ -122,25 +110,6 @@ snake_game/
 └── snake_env/        # Ambiente virtual (se criado)
 ```
 
-### 🔧 Classes Principais
-
-#### `Snake`
-- Gerencia o corpo da cobra
-- Controla movimento e direção
-- Detecta colisões com wraparound
-- Desenha a cobra com cabeça diferenciada
-
-#### `Food`
-- Gera comida em posições aleatórias
-- Evita spawnar no corpo da cobra
-- Desenha comida na tela
-
-#### `Game`
-- Classe principal do jogo
-- Gerencia estados e lógica
-- Implementa algoritmo hamiltoniano
-- Controla velocidade e modos
-
 ### 🧮 Algoritmo Hamiltoniano
 
 O modo automático utiliza um **ciclo hamiltoniano** que:
@@ -157,28 +126,6 @@ Linha 2: → → → → → → →
 Linha 3: ← ← ← ← ← ← ←
 ```
 
-## ⚙️ Configurações
-
-### 🎨 Personalização Visual
-```python
-# Cores (RGB)
-BLACK = (0, 0, 0)
-WHITE = (255, 255, 255)
-RED = (255, 0, 0)          # Comida
-GREEN = (0, 255, 0)        # Corpo da cobra
-DARK_GREEN = (0, 150, 0)   # Cabeça da cobra
-
-# Tamanhos
-WINDOW_WIDTH = 800
-WINDOW_HEIGHT = 600
-CELL_SIZE = 20
-```
-
-### ⚡ Configurações de Performance
-```python
-FPS = 60                # Taxa de quadros
-SNAKE_SPEED = 50        # Velocidade inicial (ms)
-```
 
 ## 🐛 Solução de Problemas
 
@@ -199,15 +146,6 @@ sudo pacman -S python-pygame
 - Pressione `=` várias vezes para acelerar
 - Use modo automático (`A`) para ver velocidade máxima
 
-### Problema: Controles não respondem
-**Solução:**
-- Certifique-se de que o jogo foi iniciado (pressione qualquer tecla)
-- No modo automático, controles manuais são desabilitados
-
-## 🤝 Contribuição
-
-Contribuições são bem-vindas! Aqui estão algumas ideias:
-
 ### 🆕 Funcionalidades Sugeridas
 - [ ] Sistema de high scores
 - [ ] Diferentes tipos de comida
@@ -215,13 +153,7 @@ Contribuições são bem-vindas! Aqui estão algumas ideias:
 - [ ] Sons e música
 - [ ] Multiplayer local
 - [ ] Diferentes algoritmos de IA
-
-### 🐛 Reportar Bugs
-1. Descreva o problema detalhadamente
-2. Inclua passos para reproduzir
-3. Especifique versão do Python e SO
-4. Anexe screenshots se relevante
-
+- [ ] 
 ## 📝 Licença
 
 Este projeto está sob a licença MIT. Veja arquivo LICENSE para detalhes.
@@ -231,14 +163,6 @@ Este projeto está sob a licença MIT. Veja arquivo LICENSE para detalhes.
 - **Pygame Community** - Framework de jogos Python
 - **Algoritmo Hamiltoniano** - Inspirado em soluções clássicas de Snake
 - **Python Community** - Linguagem e ecossistema
-
-## 📊 Estatísticas do Projeto
-
-- **Linguagem:** Python 3.13
-- **Framework:** Pygame 2.5.2
-- **Linhas de Código:** ~375
-- **Classes:** 3 principais (Snake, Food, Game)
-- **Velocidade Máxima:** 100.000 movimentos/segundo
 
 ---
 

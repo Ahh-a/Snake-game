@@ -83,32 +83,6 @@ python snake.py
 - Ideal para demonstrações e testes
 - Colete comida automaticamente
 
-### ⚡ Sistema de Velocidade
-
-O jogo possui um sistema de velocidade em duas fases:
-
-1. **Fase 1 - Redução de Delay** (50ms → 1ms)
-   - Pressione `=` para reduzir delay
-   - Cada tecla diminui 5ms
-   - Mínimo: 1ms de delay
-
-2. **Fase 2 - Múltiplos Movimentos** (1x → 100x)
-   - Após atingir 1ms, aumenta movimentos por frame
-   - Cada tecla adiciona +1 movimento
-   - Máximo: 100 movimentos por frame
-
-**Resultado:** Até **100.000 movimentos por segundo**!
-
-## 🏗️ Arquitetura do Código
-
-### 📁 Estrutura do Projeto
-```
-snake_game/
-├── snake.py           # Código principal do jogo
-├── requirements.txt   # Dependências Python
-├── README.md         # Este arquivo
-└── snake_env/        # Ambiente virtual (se criado)
-```
 
 ### 🧮 Algoritmo Hamiltoniano
 
@@ -125,47 +99,3 @@ Linha 1: ← ← ← ← ← ← ←
 Linha 2: → → → → → → →
 Linha 3: ← ← ← ← ← ← ←
 ```
-
-
-## 🐛 Solução de Problemas
-
-### Problema: "ModuleNotFoundError: No module named 'pygame'"
-**Solução:**
-```bash
-pip install pygame==2.5.2
-```
-
-### Problema: "externally-managed-environment" (Arch Linux)
-**Solução:**
-```bash
-sudo pacman -S python-pygame
-```
-
-### Problema: Jogo muito lento
-**Solução:**
-- Pressione `=` várias vezes para acelerar
-- Use modo automático (`A`) para ver velocidade máxima
-
-### 🆕 Funcionalidades Sugeridas
-- [ ] Sistema de high scores
-- [ ] Diferentes tipos de comida
-- [ ] Múltiplos níveis/mapas
-- [ ] Sons e música
-- [ ] Multiplayer local
-- [ ] Diferentes algoritmos de IA
-- [ ] 
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja arquivo LICENSE para detalhes.
-
-## 🙏 Créditos
-
-- **Pygame Community** - Framework de jogos Python
-- **Algoritmo Hamiltoniano** - Inspirado em soluções clássicas de Snake
-- **Python Community** - Linguagem e ecossistema
-
----
-
-**Feito com ❤️ e Python** 🐍
-
-Divirta-se jogando e explorando o código! 🎮
